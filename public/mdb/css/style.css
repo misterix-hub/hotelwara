@@ -1,0 +1,53 @@
+.sideBarLeft {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #EEE;
+    width: 18%;
+}
+.wrappable-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFF;
+    width: 82%;
+}
+
+.font-size-14 {
+    font-size: 14px !important;
+}
+
+.font-size-13 {
+    font-size: 13px !important;
+}
+
+.comfortaa {
+    font-family: comfortaa;
+}
+
+.sideBarLeft .menu-item a div {
+    font-family: comfortaa;
+    font-size: 14px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: #555;
+}
+.sideBarLeft .menu-item a div i {
+    margin-right: 5px;
+}
+
+.sideBarLeft .menu-item a div:hover {
+    background-color: #1e88e5;
+    color: #FFF;
+}
+
+.sideBarLeft .divider {
+    font-family: comfortaa;   
+}
+
+@font-face {
+    src: url(../../fonts/Comfortaa-Regular.ttf);
+    font-family: comfortaa;
+}
