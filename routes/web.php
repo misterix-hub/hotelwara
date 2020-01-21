@@ -74,6 +74,9 @@ Route::get('reservations/{id}/supprimer', 'ReservationController@destroy')->name
 Route::get('reservations/{id}/fermer', 'ReservationController@fermer')->name('fermerReservation');
 Route::post('reservations/adjouter', 'ReservationController@store')->name('storeReservation');
 
+Route::get('reservations/bilan', 'ReservationController@bilan')->name('bilanReservation');
+Route::get('reservations/bilan/print', 'ReservationController@printBilan')->name('printBilan');
+
 Route::get('login', 'Controller@login')->name('login');
 Route::post('login', 'UtilisateurController@loginForm')->name('loginForm');
 

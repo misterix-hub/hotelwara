@@ -74,7 +74,7 @@ class UtilisateurController extends Controller
      */
     public function edit($id)
     {
-        if(session()->get('role') == "gerant") {
+        if(session()->get('role') != "gerant" && session()->get('role') != "admin") {
             abort('404');
         } else {
             return view('utilisateurs.modifier');
@@ -95,7 +95,10 @@ class UtilisateurController extends Controller
         } else {
             $user = User::find(session()->get('id'));
             $user->name = $request->nom;
-            $user->password = sha1($request->password);
+            $user->email = $request->email;
+            if ($request->password != "") {
+                $user->password = sha1($request->password);
+            }
             $user->save();
 
             session()->put('nom', $request->nom);

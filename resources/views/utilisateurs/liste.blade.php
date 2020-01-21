@@ -31,7 +31,7 @@
                                 Nom complet
                             </th>
                             <th>
-                                email
+                                Email | Téléphone
                             </th>
                             <th>
                                 Rôle
@@ -79,7 +79,7 @@
                                 Nom complet
                             </th>
                             <th>
-                                email
+                                Email | Téléphone
                             </th>
                             <th>
                                 Rôle

@@ -2,7 +2,8 @@
 
 @section('sideBarLeft')
     <div class="sideBarLeft">
-        <div class="titre comfortaa blue darken-1 white-text" style="padding: 11px 10px;">
+        <div class="titre comfortaa blue darken-1 white-text" style="padding: 7px 10px 8px 10px;">
+            <img src="{{ URL::asset('images/logo_hotel_wara.jpg') }}" alt="logo" style="border-radius: 2px;" width="32">
             Hotel wara
         </div>
         <div class="pr-2 pl-2 pb-1 pt-1 grey lighten-2">
@@ -41,7 +42,13 @@
             <a href="{{ route('listeReservation') }}">
                 <div class="rounded pl-1">
                     <i class="icofont-calendar"></i>
-                    Réservation
+                    Réservations
+                </div>
+            </a>
+            <a href="{{ route('bilanReservation') }}">
+                <div class="rounded pl-1">
+                    <i class="icofont-chart-line"></i>
+                    Faire un bilan
                 </div>
             </a>
         </div>

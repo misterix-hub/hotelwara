@@ -38,8 +38,8 @@
                                 <input required type="text" id="nom" name="nom" class="form-control font-size-14" placeholder="Saisir dans le champs ...">
                             </td>
                             <td>
-                                <label for="email" class="font-size-14 mb-0"><b>email</b></label>
-                                <input required type="email" id="email" name="email" class="form-control font-size-14" placeholder="Saisir dans le champs ...">
+                                <label for="email" class="font-size-14 mb-0"><b>Email ou téléphone</b></label>
+                                <input required type="text" id="email" name="email" class="form-control font-size-14" placeholder="Saisir dans le champs ...">
                             </td>
                         </tr>
                         <tr>
@@ -64,6 +64,8 @@
                         </tr>
                     </table>
                 </form>
+
+                <!-- HW6698 -->
 
             </div>
             <div class="col-lg-3 col-md-12 com-sm-12">

@@ -9,7 +9,7 @@
                 <table>
                     <tr>
                         <td>
-                            <i class="icofont-soundcloud icofont-3x blue-text"></i>
+                            <img src="{{ URL::asset('images/logo_hotel_wara.jpg') }}" alt="logo" class="rounded" width="50">
                         </td>
                         <td class="pl-1" style="padding-top: 12px;">
                             <b>HôtelWara</b>
@@ -19,7 +19,7 @@
             </div>
             <div class="col-12 text-center">
                 <h2>
-                    <i class="icofont-soundcloud icofont-3x blue-text"></i><br />
+                    <img src="{{ URL::asset('images/logo_hotel_wara.jpg') }}" alt="logo" class="rounded mb-2" width="100"><br />
                     Connexion
                 </h2><br />
                 
@@ -42,9 +42,9 @@
                     @csrf
     
                     <label for="email" class="mb-0" style="font-size: 14px;">
-                        <b>Email</b>
+                        <b>Email ou téléphone</b>
                     </label>
-                    <input type="email" name="email" id="email" class="form-control" placeholder="Saisir dans le champs ...">
+                    <input type="text" name="email" id="email" class="form-control" placeholder="Saisir dans le champs ...">
     
                     <label for="password" class="mb-0 mt-4" style="font-size: 14px;">
                         <b>Mot de passe</b>

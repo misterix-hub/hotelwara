@@ -8,7 +8,7 @@
                 <h5 class="badge badge-primary pl-3 pr-3" style="font-size: 16px; font-weight: 300; border-radius: 15px;">
                     {{ count(App\Client::all()) }}
                 </h5>
-                <small class="blue-text">Détails</small>
+                <small class="blue-text">Ouvrir</small>
             </div>
             <p class="mb-1">Clients</p>
             <small>Liste des clients</small>
@@ -18,7 +18,7 @@
                 <h5 class="badge badge-warning pl-3 pr-3" style="font-size: 16px; font-weight: 300; border-radius: 15px;">
                     {{ count(App\Chambre::all()) }}
                 </h5>
-                <small class="blue-text">Détails</small>
+                <small class="blue-text">Ouvrir</small>
             </div>
             <p class="mb-1">Chambres</p>
             <small>Liste des chambres</small>
@@ -28,7 +28,7 @@
                 <h5 class="badge badge-success pl-3 pr-3" style="font-size: 16px; font-weight: 300; border-radius: 15px;">
                     {{ count(App\Reservation::all()) }}
                 </h5>
-                <small class="blue-text">Détails</small>
+                <small class="blue-text">Ouvrir</small>
             </div>
             <p class="mb-1">Réservation</p>
             <small>Liste des réservations</small>
@@ -38,7 +38,7 @@
                 <h5 class="badge badge-danger pl-3 pr-3" style="font-size: 16px; font-weight: 300; border-radius: 15px;">
                     {{ count(App\User::all()) }}
                 </h5>
-                <small class="blue-text">Détails</small>
+                <small class="blue-text">Ouvrir</small>
             </div>
             <p class="mb-1">Utilisateurs</p>
             <small>Liste des utilisateurs</small>
@@ -48,7 +48,7 @@
                 <h5 class="badge badge-default pl-3 pr-3" style="font-size: 16px; font-weight: 300; border-radius: 15px;">
                     {{ count(App\Personnel::all()) }}
                 </h5>
-                <small class="blue-text">Détails</small>
+                <small class="blue-text">Ouvrir</small>
             </div>
             <p class="mb-1">Personnel</p>
             <small>Liste du personnel</small>

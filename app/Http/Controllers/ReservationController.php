@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Client;
 use App\Reservation;
+use App\BilanReservation;
 
 class ReservationController extends Controller
 {
@@ -137,11 +138,7 @@ class ReservationController extends Controller
     }
 
     public function facture($id, $action) {
-        /*$date1 = strtotime("2019-12-15");
-        $date2 = strtotime("2020-01-2");
-
-        return ($date2 - $date1) / 86400;*/
-
+        
         return view('reservations.facture', [
             'id' => $id,
             'action' => $action
@@ -150,9 +147,27 @@ class ReservationController extends Controller
 
     public function fermer($id) {
         $reservation = Reservation::find($id);
+        $reservation->fin = date("Y-m-d");
         $reservation->etat = "Termine";
         $reservation->save();
+
         
         return redirect(route('factureReservation', [$id, 'terminer']));
+    }
+
+    public function bilan() {
+
+        return view('reservations.bilan');
+    }
+
+    public function printBilan(Request $request) {
+        $date_debut = substr($request->date, 0, 10);
+        $date_fin = substr($request->date, 22, 10);
+        return view('reservations.print_bilan', [
+            "date_debut" => $date_debut,
+            "date_fin" => $date_fin,
+            'montant_total' => 0,
+            'nb_jours' => 0
+        ]);
     }
 }
